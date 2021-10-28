@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+<script>
+ var a =prompt("[Enter Player 1]. This game will vote the winner between two poeple.");
+
+</script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>I'll Decide The Best Option For you.</h1>
+
+      <div class="dice">
+        <p id='name'onclick="name()"> window promp() Method</p>
+        <img class="img1" src="images/dice6.png">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="images/dice6.png">
+      </div>
+
+<div class="b">
+
+
+    <button type="button"class="button1" onClick="refreshPage1()">Clear</button>
+    <button type="button" class="b2" onClick="refreshPage2()">GO!</button>
+</div>
+<footer>
+🎲 Aarons Game 🎲
+</footer>
+  </div>
+    <script>
+    function name(){
+      document.getElementById("name").innerHTML =a;
+    }
+    name(a);
+
+    function refreshPage1(){
+
+        document.querySelector("h1").innerHTML = "Can't Decide? Let Me Choose For You.";
+
+    }
+    function refreshPage2(){
+       window.location.reload();
+    }
+    </script>
+ <script src="index.js" charset="utf-8"></script>
+
+  </body>
+
+
+</html>
